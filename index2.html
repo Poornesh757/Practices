@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Timer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+
+        .timer-container {
+            text-align: center;
+        }
+
+        .timer-display {
+            font-size: 23rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        input {
+            margin: 0 5px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: white;
+        }
+
+        button {
+            font-size: 1.5rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="timer-container d-flex flex-column justify-content-center align-items-center">
+        <!-- <h1 class="text-white">Advanced Timer</h1> -->
+        <div class="timer-display my-4">
+            <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+        </div>
+        <div class="mb-3">
+            <input type="number" id="inputHours" placeholder="Hours" class="form-control d-inline-block w-auto">
+            <input type="number" id="inputMinutes" placeholder="Minutes" class="form-control d-inline-block w-auto">
+            <input type="number" id="inputSeconds" placeholder="Seconds" class="form-control d-inline-block w-auto">
+        </div>
+        <div>
+            <button id="startButton" class="btn btn-success me-2">Start</button>
+            <button id="stopButton" class="btn btn-danger me-2">Stop</button>
+            <button id="resetButton" class="btn btn-warning me-2">Reset</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
